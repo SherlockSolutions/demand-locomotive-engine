@@ -19,9 +19,9 @@ test:
 production:
   sessions:
     default:
-      database: locomotive_production
+      database: demand_production
       # heroku
-      # uri: <%= ENV['MONGOHQ_URL'] %>
+      uri: <%= ENV['MONGOHQ_URL'] %>
       hosts:
         - localhost:27017
   options:
