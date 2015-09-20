@@ -19,6 +19,6 @@ test:
 production:
   sessions:
     default:
-      uri: <%= ENV['MONGOHQ_URL'] %>
+      uri: <%= ENV['MONGO_URL'] %>
   options:
     identity_map_enabled: true
