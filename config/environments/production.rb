@@ -27,7 +27,7 @@ DemandRails::Application.configure do
   config.action_mailer.smtp_settings = {
     address:         ENV['SMTP_SERVER_ADDRESS'],
     port:            ENV['SMTP_SERVER_PORT'],
-    ssl:             true,
+    ssl:             (ENV['SMTP_SSL'] == 'true'),
     authentication:  ENV['SMTP_AUTHENTICATION'],
     user_name:       ENV['SMTP_USERNAME'],
     password:        ENV['SMTP_PASSWORD'],
